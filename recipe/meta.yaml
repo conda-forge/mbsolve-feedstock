@@ -58,7 +58,7 @@ test:
 
 about:
   home: https://github.com/mriesch-tum/mbsolve
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
   summary: 'An open-source solver tool for the Maxwell-Bloch equations.'
