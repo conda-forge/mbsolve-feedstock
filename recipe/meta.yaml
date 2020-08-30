@@ -10,8 +10,9 @@ source:
   sha256: 17fbf44697b601e29e1cf88003a6d12bfc1066f52d5f88e0e0fa6e50a96a30d9
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win and vc<14]
+  skip: True  # [python_impl == 'pypy']
 
 requirements:
   build:
@@ -58,7 +59,7 @@ test:
 
 about:
   home: https://github.com/mriesch-tum/mbsolve
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
   summary: 'An open-source solver tool for the Maxwell-Bloch equations.'
