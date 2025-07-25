@@ -18,7 +18,7 @@ requirements:
     - {{ stdlib("c") }}
     - cmake
     - make             # [unix]
-    - ninja            # [win]
+    - ninja <1.13      # [win]
     - swig
   host:
     - cxxopts
