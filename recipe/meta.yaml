@@ -11,8 +11,6 @@ source:
 
 build:
   number: 11
-  skip: True  # [win and vc<14]
-  skip: True  # [python_impl == 'pypy']
 
 requirements:
   build:
