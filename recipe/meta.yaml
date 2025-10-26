@@ -30,6 +30,7 @@ requirements:
     - hdf5
     - python
     - pip
+    - setuptools
   run:
     - llvm-openmp      # [osx]
     - libgomp          # [linux and not aarch64]
