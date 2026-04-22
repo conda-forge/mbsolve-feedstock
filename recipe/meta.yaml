@@ -10,16 +10,15 @@ source:
   sha256: 17fbf44697b601e29e1cf88003a6d12bfc1066f52d5f88e0e0fa6e50a96a30d9
 
 build:
-  number: 10
-  skip: True  # [win and vc<14]
-  skip: True  # [python_impl == 'pypy']
+  number: 11
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make             # [unix]
-    - ninja            # [win]
+    - ninja <1.13      # [win]
     - swig
   host:
     - cxxopts
@@ -29,6 +28,7 @@ requirements:
     - hdf5
     - python
     - pip
+    - setuptools
   run:
     - llvm-openmp      # [osx]
     - libgomp          # [linux and not aarch64]
